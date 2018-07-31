@@ -1,0 +1,27 @@
+// Scaling Node.js Applications
+https://medium.freecodecamp.org/scaling-node-js-applications-8492bd8afadc
+
+
+// High Performance Apps with JavaScript and Rust, It's Easier Than You Think
+https://www.youtube.com/watch?v=Pfbw4YPrwf4
+
+
+// Real-Time Machine Learning with Node.js by Philipp Burckhardt, Carnegie Mellon University
+https://www.youtube.com/watch?v=fK32__vlVAA
+
+
+// Node.js Performance and Highly Scalable Micro-Services - Chris Bailey, IBM
+https://www.youtube.com/watch?v=Fbhhc4jtGW4
+
+
+// Build Node.js RESTful APIs in 10 Minutes
+https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
+
+
+// RESTful API design with Node.js
+https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09
+
+
+// 13 fabulous frameworks for Node.js
+https://www.infoworld.com/article/3064653/application-development/13-fabulous-frameworks-for-nodejs.html
+
