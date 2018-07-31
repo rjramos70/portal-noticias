@@ -2,8 +2,7 @@
 var mysql = require('mysql');
 
 var connMySQL = function(){
-		console.log('Conexao com o BD foi estabelecida');
-
+		
 		// Estabelecer a conexão com o banco de dados
 		return mysql.createConnection({
 			host : 'localhost',				// nesse caso o loopback local 
@@ -14,6 +13,5 @@ var connMySQL = function(){
 };
 
 module.exports = function(){
-	console.log('O autoload carregou o módulo de conexão com o BD.');
 	return connMySQL;	// retorna a variavel evitando que seja uma função executada pelo Consign
 };

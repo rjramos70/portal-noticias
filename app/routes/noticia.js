@@ -1,21 +1,13 @@
-
 module.exports = function(application){
 
-	application.get('/noticia', function(req, res){
+    application.get('/noticia', function(req,res){
 
-		// Como estamos passando nossa conexao pelo paramentro 'app',
-		// vamos pegar nossa dbConnection por esse parametro.
-		var connection = application.config.dbConnection();	// recebe a função já a executando
+        var connection = application.config.dbConnection();
+        var noticiasModel = new application.app.models.NoticiasDAO(connection);
 
-		// carrega a model 'noticiasModel.js'
-		var noticiasModel = application.app.models.noticiasModel;
+        noticiasModel.getNoticia(function(error, result){
+            res.render('noticias/noticia', { noticia : result });
+        });
 
-		// Executa a função do model
-		noticiasModel.getNoticia(connection, function(error, result){
-			// envia para quem fez a requisição o resultado da consulta para nossa view passando o resultado
-			res.render("noticias/noticia", { noticia : result });	
-		});
-
-	});
-	
-};
+    });
+}
